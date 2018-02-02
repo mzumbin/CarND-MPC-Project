@@ -1,3 +1,5 @@
+[Project Report](./report.md)
+
 # CarND-Controls-MPC
 Self-Driving Car Engineer Nanodegree Program
 
