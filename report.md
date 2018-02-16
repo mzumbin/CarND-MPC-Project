@@ -60,10 +60,10 @@ the minimizatizon errors can be seen in the code below
 
 
 
-###Timestep Length and Elapsed Duration (N & dt)
+### Timestep Length and Elapsed Duration (N & dt)
 the values used are sugested in the Q&A video and they worked great
 
-###Polynomial Fitting and MPC Preprocessing
+### Polynomial Fitting and MPC Preprocessing
 As shown in the state, the coordinates used are the cars coordinate. So the waypoints must be transformed, the code above shows the trasformation. the code also shows the aproximation used in cte( distance to y , not the smalest distance to waypoint polynomial) and the epsi wich is just the slope of the polynomial evaluated at 0;
 
 ```c++
@@ -84,7 +84,7 @@ double epsi = -atan(coefs[1]);
 ```
 
 
-###Model Predictive Control with Latency
+### Model Predictive Control with Latency
 The predicition uses the same model to predict the 100ms ahead , the velocity is calculated using the trapeziodal rule(https://en.wikipedia.org/wiki/Trapezoidal_rule), so v = (v(t-1)+v(t)) /2 and the update eq becomes:
 
 ```c++
